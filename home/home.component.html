@@ -1,0 +1,28 @@
+<h1>welcome to Home ...
+</h1>
+
+<div  class="col-md-1" >
+    <a href="">
+    <button type="button" class="btn btn-outline-danger" >Home</button>
+</a>
+</div>
+<div  >
+  
+    <button type="button" class="btn btn-outline-danger" label="Click" (click)="toggleChild()">List</button>
+    <div id="table-view">
+        <app-list [showMePartially]="showVar" ></app-list>
+    </div>
+</div>
+
+<div >
+  
+    <button type="button" class="btn btn-outline-danger" label="Click" (click)="toggleadd()"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true">ADD</span></button>
+    <div>
+        <app-add [showMe]="show"></app-add>
+    </div>
+</div>
+
+
+  
+
+ 

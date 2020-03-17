@@ -1,0 +1,41 @@
+<div *ngIf="showMePartially"> 
+
+
+<br/><br>
+
+     
+<div class="row">
+    <div class="col-md-1">id</div>
+    <div class="col-md-1">name</div>
+    <div class="col-md-2">email</div>
+    <div class="col-md-1">age</div>
+    <div class="col-md-1">location</div>
+    
+      </div>
+    <br>
+    <div class="row" *ngFor="let temp of user ">
+
+        <div class="col-md-1">{{temp.id}}</div>
+        <div class="col-md-1">{{temp.name}}</div>
+        <div class="col-md-2" >{{temp.email}}</div>
+        <div class="col-md-1">{{temp.age}}</div>
+        <div class="col-md-1">{{temp.location}}</div>
+        
+
+   
+        <div ><button  type="button" class="btn btn-outline-primary" (click)="edit(temp)" >Edit</button></div>
+        
+        
+        <div>
+            <button (click)="delete(temp)">Delete</button>
+        </div>
+      
+        
+      
+        <div>
+        </div>
+      </div>
+    
+    </div>
+    
+    
